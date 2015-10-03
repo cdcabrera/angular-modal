@@ -1,2 +1,3 @@
-# angular-modal
-Really simple UI mdel, because well... it's a modal
+# Angular Modal
+
+A really simple UI modal, because well, a modal shouldn't be complicated...

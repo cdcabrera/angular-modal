@@ -1,0 +1,36 @@
+{
+    "name": "Angular-Modal",
+    "version": "0.0.1",
+    "description": "A really simple UI modal, because well, a modal shouldn't be complicated...",
+    "scripts": {
+
+        "serve": "gulp serve",
+        "test": "karma start"
+    },
+    "repository": {
+        
+        "type": "git",
+        "url": "https://github.com/cdcabrera/angular-modal.git"
+    },
+    "keywords": ["angular", "modal"],
+    "author": "cdcabrera",
+    "license": "MIT",
+    "engines" : {
+
+        "node" : ">=0.12.2"
+    },
+    "devDependencies": {
+
+        "jasmine-core": "^2.2.0",
+        "karma": "^0.12.31",
+        "karma-cli": "^0.0.4",
+        "karma-jasmine": "^0.3.5",
+        "karma-chrome-launcher": "^0.1.7",
+        "karma-firefox-launcher": "^0.1.4",
+        "karma-phantomjs-launcher": "^0.1.4",
+        "karma-ng-html2js-preprocessor": "^0.1.2",
+        "karma-ng-json2js-preprocessor": "^1.0.0",
+
+        "phantomjs": "^1.9.16"
+    }
+}
