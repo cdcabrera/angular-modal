@@ -14,10 +14,16 @@
         "bower_components",
         "src/bower_components",
         "test",
-        "tests"
+        "tests",
+        "demo.html",
+        "**/*_spec.js",
+        "*.md",
+        "*.js",
+        "package.json"
     ],
     "main": [
-        "src/directive.modal.js"
+
+        "dist/directive.modal.js"
     ],
     "dependencies": {
 

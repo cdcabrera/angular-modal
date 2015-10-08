@@ -13,10 +13,10 @@
         servePath:      './src',
         serveIndex:     'demo.html',
 
-        genericMatch:   ['./app/**/*.md'],
-        graphicMatch:   ['./app/**/*.png','./app/**/*.jpg','./app/**/*.gif'],
-        jsMatch:        ['./app/**/*.js', '!app/**/*.dev.js', '!app/**/*_spec.js'],
-        cssMatch:       ['./app/**/*.css']
+        genericMatch:   ['./src/**/*.md'],
+        graphicMatch:   ['./src/**/*.png','./src/**/*.jpg','./src/**/*.gif'],
+        jsMatch:        ['./src/**/*.js', '!src/**/*.dev.js', '!src/**/*_spec.js'],
+        cssMatch:       ['./src/**/*.css']
     };
 
 
