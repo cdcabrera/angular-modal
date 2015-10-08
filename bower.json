@@ -16,8 +16,7 @@
         "tests",
         "demo.html",
         "**/*_spec.js",
-        "*.md",
-        "*.js",
+        "./*.js",
         "package.json"
     ],
     "main": [
