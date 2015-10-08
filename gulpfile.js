@@ -11,6 +11,7 @@
         date:           new Date().toDateString(),
 
         servePath:      './src',
+        serveIndex:     'demo.html',
 
         genericMatch:   ['./app/**/*.md'],
         graphicMatch:   ['./app/**/*.png','./app/**/*.jpg','./app/**/*.gif'],
@@ -39,7 +40,8 @@
         _browserSync({
             server: {
                 baseDir: _settings.servePath,
-                directory:true
+                index: _settings.serveIndex
+                //directory:true
             }
         });
 
