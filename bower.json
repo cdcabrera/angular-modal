@@ -16,6 +16,9 @@
         "test",
         "tests"
     ],
+    "main": [
+        "src/directive.modal.js"
+    ],
     "dependencies": {
 
         "angular": "1.2.3",
