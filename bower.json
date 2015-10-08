@@ -9,7 +9,6 @@
     "ignore": [
 
         "**/.*",
-        "dist",
         "node_modules",
         "bower_components",
         "src/bower_components",
