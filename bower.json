@@ -11,12 +11,10 @@
         "**/.*",
         "node_modules",
         "bower_components",
-        "src/bower_components",
+        "src",
         "test",
         "tests",
-        "demo.html",
-        "**/*_spec.js",
-        "./*.js",
+        "*.js",
         "package.json"
     ],
     "main": [
