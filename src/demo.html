@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+
+    </head>
+    <body data-ng-app="sample">
+
+        <div class="container-fluid"
+             data-ng-controller="samplectrl">
+
+            <h1>Demo, Angular-Modal</h1>
+
+            <p>
+                The modal currently uses Bootstrap CSS &amp; HTML for styling. Feel free to update both for your own needs.
+            </p>
+
+            <p>
+                The modal uses a single parameter, a boolean, true == "on", false == "off".
+            </p>
+
+            <a class="btn btn-primary"
+               data-ng-href="#"
+               data-ng-click="modalTurnOnOff($event)">Click, Simple Modal {{modalIsOnOff}}</a>
+
+
+            <div data-modal=""
+                 data-show-modal="modalShow">
+
+                <div class="modal-body">
+
+                    <p>
+                        {{modalContent}}
+                    </p>
+
+                    <a class="btn btn-primary"
+                       data-ng-href="#"
+                       data-ng-click="modalTurnOnOff($event)">Click, Simple Modal {{modalIsOnOff}}</a>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+        <script src="directive.modal.js"></script>
+        <script>
+
+            var app = angular.module('sample',['directives.modal']);
+
+            app.controller('samplectrl', [
+                '$scope',
+                function($scope) {
+
+                    $scope.modalShow = false;
+                    $scope.modalContent = 'Sample scope content...';
+                    $scope.modalIsOnOff = 'On';
+
+                    $scope.modalTurnOnOff = function (e) {
+
+                        if ($scope.modalShow) {
+
+                            $scope.modalShow = false;
+                            $scope.modalIsOnOff = 'On';
+
+                        } else {
+
+                            $scope.modalShow = true;
+                            $scope.modalIsOnOff = 'Off';
+                        }
+                    };
+
+
+                }]);
+
+        </script>
+    </body>
+</html>
